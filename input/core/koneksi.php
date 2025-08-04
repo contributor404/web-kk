@@ -1,0 +1,1 @@
+$database = new mysqli("localhost", "root", "", "syntx");
