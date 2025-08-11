@@ -45,9 +45,12 @@ $from_database = $konek->query($query);
                     <td><?= $hasil["nama"] ?></td>
                     <td><?= $hasil["kelas"] ?></td>
                     <td><?= $hasil["jurusan"] ?></td>
-                    <td> <a href="../core/proses.php?action=delete&id=<?= $hasil["id"] ?>" onclick="return confirm('Apakah anda yakin?')"><i class="bi bi-trash text-danger fs-4"></i></a> <i class="bi ms-3 fs-4 bi-pencil text-warning"></i></td>
+                    <td>
+                        <a href="../core/proses.php?action=delete&id=<?= $hasil["id"] ?>" onclick="return confirm('Apakah anda yakin?')"><i class="bi bi-trash text-danger fs-4"></i></a>
+                        <a href="../pages/update.php?id=<?= $hasil["id"] ?>"><i class="bi ms-3 fs-4 bi-pencil text-warning"></i></i></a>
+                    </td>
                 </tr>
-            <?php 
+            <?php
             }
             ?>
         </tbody>

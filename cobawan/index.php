@@ -39,7 +39,7 @@
     <div class="row mt-2">
         <div class="col-2 pe-5">
             <ul class="list-group list-group-flush">
-                <a href="./pages/add.php" target="container" class="list-group-item">Menu</a>
+                <a href="./pages/add.php" target="container" class="list-group-item">Tambah data</a>
                 <a href="./pages/fahim.php" target="container" class="list-group-item">Data Siswa</a>
             </ul>
         </div>
