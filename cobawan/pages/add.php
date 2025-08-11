@@ -38,7 +38,7 @@ $from_database = $konek->query($query);
             <input type="text" class="form-control" name="jurusan" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" name="tambah" class="btn btn-primary">Submit</button>
     </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

@@ -6,7 +6,7 @@ function movePage($page) {
     header("Location: ../pages/fahim.php");
 }
 
-if (isset($_GET["action"]) && $_GET["action"] == "delete") {
+if ($_GET["action"] == "delete") {
     $id = $_GET["id"];
 
     $query = "DELETE FROM `siswa` WHERE id=$id";
@@ -14,7 +14,9 @@ if (isset($_GET["action"]) && $_GET["action"] == "delete") {
     $konek->query($query);
 
     movePage("../pages/fahim.php");
-} else if (isset($_POST["nama"]) && isset($_POST["kelas"]) && isset($_POST["jurusan"]) && !isset($_POST["id"])) {
+}
+
+if (isset($_POST["tambah"])) {
     $nama = $_POST["nama"];
     $kelas = $_POST["kelas"];
     $jurusan = $_POST["jurusan"];
@@ -23,7 +25,9 @@ if (isset($_GET["action"]) && $_GET["action"] == "delete") {
 
     $konek->query($query);
     movePage("../pages/fahim.php");
-} else if (isset($_POST["nama"]) && isset($_POST["kelas"]) && isset($_POST["jurusan"]) && isset($_POST["id"])) {
+}
+
+if (isset($_POST["update"])) {
     $id = $_POST["id"];
     $nama = $_POST["nama"];
     $kelas = $_POST["kelas"];

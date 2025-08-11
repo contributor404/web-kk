@@ -40,7 +40,7 @@ $data = $from_database->fetch_array();
             <input type="text" value="<?= $data["jurusan"] ?>" class="form-control" name="jurusan" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
 
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" name="update" class="btn btn-primary">Update</button>
     </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
