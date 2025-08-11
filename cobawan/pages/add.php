@@ -24,18 +24,18 @@ $from_database = $konek->query($query);
 </head>
 
 <body>
-    <form>
+    <form class="container mt-5" action="../core/proses.php" method="POST">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Nama</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" class="form-control" name="nama" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Kelas</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" class="form-control" name="kelas" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Jurusan</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="text" class="form-control" name="jurusan" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         
         <button type="submit" class="btn btn-primary">Submit</button>

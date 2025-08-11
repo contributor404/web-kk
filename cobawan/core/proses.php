@@ -8,12 +8,12 @@ if (isset($_GET["action"]) && $_GET["action"] == "delete") {
     $query = "DELETE FROM `siswa` WHERE id=$id";
 
     $konek->query($query);
-} else if (isset($_GET["action"]) && $_GET["action"] == "add") {
-    $nama = $_GET["nama"];
-    $kelas = $_GET["kelas"];
-    $jurusan = $_GET["nama"];
+} else if (isset($_POST["nama"]) && isset($_POST["kelas"]) && isset($_POST["jurusan"])) {
+    $nama = $_POST["nama"];
+    $kelas = $_POST["kelas"];
+    $jurusan = $_POST["jurusan"];
 
-    $query = "INSERT INTO `siswa` (nama, kelas, jurusan) VALUES ('Nama Siswa', 'Kelas Siswa','')";
+    $query = "INSERT INTO `siswa` (nama, kelas, jurusan) VALUES ('$nama', '$kelas', '$jurusan')";
 
     $konek->query($query);
 }
